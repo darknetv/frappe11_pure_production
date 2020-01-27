@@ -1,0 +1,11 @@
+2020-01-26 16:55:04,261 INFO sudo pip2 install ansible
+2020-01-26 16:55:32,758 INFO bench setup role fail2ban
+2020-01-26 16:57:07,560 INFO bench setup role nginx
+2020-01-26 16:57:48,557 INFO sudo /usr/bin/supervisorctl reread
+2020-01-26 16:57:48,729 INFO sudo /usr/bin/supervisorctl reload
+2020-01-26 16:57:48,859 INFO sudo service supervisord restart 
+2020-01-26 16:57:48,870 INFO sudo service supervisor restart 
+2020-01-26 16:57:48,899 INFO sudo service nginx reload 
+2020-01-26 17:00:27,088 INFO sudo supervisorctl restart frappe:
+2020-01-26 17:03:01,689 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2020-01-27 03:32:48,116 INFO sudo supervisorctl restart frappe:

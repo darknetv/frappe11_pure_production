@@ -1,0 +1,68 @@
+version: '3.7'
+services:
+
+
+  frappe:
+    build: .
+    #image:  frappe_pure_production
+    
+    volumes:
+      - ./frappe-link:/home/frappe/frappe-link
+      - ./frappe-link/frappe-bench/logs:/home/frappe/frappe-bench/logs
+      - ./frappe-link/frappe-bench/sites:/home/frappe/frappe-bench/sites
+      - ./frappe-link/frappe-bench/config:/home/frappe/frappe-bench/config
+
+    ports:
+      - "8000:8000" # Webserver Port
+      - "9000:9000" # Socketio Port
+      - "6787:6787" # File Watcher Port
+      - "80:80"
+    
+    stdin_open: true
+    tty: true
+    links:
+      - redis-cache
+      - redis-queue
+      - redis-socketio
+
+
+    depends_on:
+      - redis-cache
+      - redis-queue
+      - redis-socketio
+
+
+    container_name: frappe
+
+
+  redis-cache:
+    image: redis:alpine
+
+    volumes:
+      - ./conf/redis-conf.d:/etc/conf.d
+
+    command: ["redis-server","/etc/conf.d/redis_cache.conf"]
+
+    container_name: redis-cache
+
+  redis-queue:
+    image: redis:alpine
+
+
+    volumes:
+      - ./conf/redis-conf.d:/etc/conf.d
+
+    command: ["redis-server","/etc/conf.d/redis_queue.conf"]
+
+    container_name: redis-queue
+
+  redis-socketio:
+    image: redis:alpine
+
+    volumes:
+      - ./conf/redis-conf.d:/etc/conf.d
+
+    command: ["redis-server","/etc/conf.d/redis_socketio.conf"]
+
+    container_name: redis-socketio
+

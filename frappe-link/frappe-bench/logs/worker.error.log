@@ -1,0 +1,28 @@
+17:03:00 RQ worker u'rq:worker:5744547c191f.2192.long' started, version 0.12.0
+17:03:00 *** Listening on long...
+17:03:00 Cleaning registries for queue: long
+17:03:00 RQ worker u'rq:worker:5744547c191f.2193.short' started, version 0.12.0
+17:03:00 *** Listening on short...
+17:03:00 Cleaning registries for queue: short
+17:03:00 RQ worker u'rq:worker:5744547c191f.2190.default' started, version 0.12.0
+17:03:00 *** Listening on default...
+17:03:00 Cleaning registries for queue: default
+17:03:01 Warm shut down requested
+17:03:01 Warm shut down requested
+17:03:01 Warm shut down requested
+17:03:04 RQ worker u'rq:worker:5744547c191f.2261.long' started, version 0.12.0
+17:03:04 *** Listening on long...
+17:03:04 Cleaning registries for queue: long
+17:03:04 RQ worker u'rq:worker:5744547c191f.2262.short' started, version 0.12.0
+17:03:04 *** Listening on short...
+17:03:04 Cleaning registries for queue: short
+17:03:04 RQ worker u'rq:worker:5744547c191f.2260.default' started, version 0.12.0
+17:03:04 *** Listening on default...
+17:03:04 Cleaning registries for queue: default
+03:21:41 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name=u'frappe.core.doctype.user.user.update_gravatar', kwargs={'name': u'darknet.v@gmail.com'}, method=u'frappe.core.doctype.user.user.update_gravatar', site=u'api.justwash.com', user=u'Administrator') (1d95b7bb-10be-4e5d-ac21-30bc740aa4bb)
+03:21:42 default: Job OK (1d95b7bb-10be-4e5d-ac21-30bc740aa4bb)
+03:21:42 Result is kept for 500 seconds
+03:21:42 Cleaning registries for queue: default
+03:21:42 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name=u'frappe.core.doctype.user.user.update_gravatar', kwargs={'name': u'darknet.v@gmail.com'}, method=u'frappe.core.doctype.user.user.update_gravatar', site=u'api.justwash.com', user=u'Administrator') (39af54c9-3b27-47da-b4fa-db1244317db1)
+03:21:42 default: Job OK (39af54c9-3b27-47da-b4fa-db1244317db1)
+03:21:42 Result is kept for 500 seconds

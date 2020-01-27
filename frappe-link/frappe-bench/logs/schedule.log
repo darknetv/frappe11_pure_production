@@ -1,0 +1,56 @@
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_all_sites
+    enqueue_events_for_site(site=site, queued_jobs=jobs_per_site[site])
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in enqueue_events_for_site
+    log_and_raise()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 87, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 234, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 243, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 642, in get_single_value
+    tabSingles where doctype=%s and field=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 165, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 115, in connect
+    charset='utf8mb4', use_unicode = True, conv = conversions, local_infile = self.local_infile)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+OperationalError: (2003, "Can't connect to MySQL server on u'192.168.5.241' ([Errno 111] Connection refused)")
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_all_sites
+    enqueue_events_for_site(site=site, queued_jobs=jobs_per_site[site])
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in enqueue_events_for_site
+    log_and_raise()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 87, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 234, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 243, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 642, in get_single_value
+    tabSingles where doctype=%s and field=%s""", (doctype, fieldname))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 165, in sql
+    self.connect()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 115, in connect
+    charset='utf8mb4', use_unicode = True, conv = conversions, local_infile = self.local_infile)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+OperationalError: (2003, "Can't connect to MySQL server on u'192.168.5.241' ([Errno 111] Connection refused)")
+
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 73, in enqueue_events_for_all_sites
+    enqueue_events_for_site(site=site, queued_jobs=jobs_per_site[site])
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 97, in enqueue_events_for_site
+    log_and_raise()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py", 
